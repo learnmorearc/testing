@@ -1,0 +1,72 @@
+com.arc.ui.grouping:
+  detailType:
+    CHK: 
+      group: checking
+      mapper: bankingAccountMapper
+    ACK:  
+      group: checking
+      mapper: bankingAccountMapper
+    ICK:  
+      group: checking
+      mapper: bankingAccountMapper
+    SAV1:  
+      group: saving
+      mapper: bankingAccountMapper
+    SAV2:   
+      group: saving
+      mapper: bankingAccountMapper
+    MOL:
+      group: loan
+      mapper: loanAccountMapper
+    CCM:
+      group: loan
+      mapper: loanAccountMapper
+    CCL: 
+      group: creditline
+      mapper: creditLineAccountMapper
+    BRK: 
+      group: brokerage
+      mapper: brokerageAccountMapper
+    EXT: 
+      group: external
+      mapper: externalAccountMapper      
+  dataSource:
+    3: 
+      group: mutualFund
+      mapper: mutualFundAccountMapper
+  deafultGroup : other
+  deafultMapper : bankingAccountMapper
+      
+com.arc.ui.grouping.groups:
+  other:
+    name: Others
+    sorting: true
+    asOfDate: false
+  checking:
+    name: Checking
+    sorting: false
+    asOfDate: false
+  saving:
+    name: Saving
+    sorting: true
+    asOfDate: false
+  loan:
+    name: Loan
+    sorting: false
+    asOfDate: false
+  creditline:
+    name: Credit Line
+    sorting: true
+    asOfDate: false
+  mutualFund:
+    name: Mutual Funds
+    sorting: true
+    asOfDate: true
+  brokerage:
+    name: Brokerage
+    sorting: true
+    asOfDate: true
+  external:
+    name: External
+    sorting: true
+    asOfDate: false

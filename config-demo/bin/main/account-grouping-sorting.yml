@@ -1,0 +1,50 @@
+com.arc.ui.grouping:
+  detailType:
+    CHK: checking
+    ACK: checking
+    ICK: checking
+    SAV1: saving
+    SAV2: saving
+    MOL: loan
+    CCM: loan
+    CCL: creditline
+    BRK: brokerage
+  dataSource:
+    3: northernfund
+  external:
+    true: external
+    false: deafult 
+
+com.arc.ui.grouping.groups:
+  deafult:
+    name: Others
+    sorting: true
+    asOfDate: false
+  checking:
+    name: Checking
+    sorting: false
+    asOfDate: false
+  saving:
+    name: Saving
+    sorting: true
+    asOfDate: false
+  loan:
+    name: Loan
+    sorting: false
+    asOfDate: false
+  creditline:
+    name: Credit Line
+    sorting: tru
+    asOfDate: false
+  northernfund:
+    name: Northern Funds
+    sorting: true
+    asOfDate: true
+  brokerage:
+    name: Brokerage
+    sorting: true
+    asOfDate: true
+  external:
+    name: External
+    sorting: true
+    asOfDate: false
